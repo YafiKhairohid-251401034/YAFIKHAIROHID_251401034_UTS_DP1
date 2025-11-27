@@ -1,0 +1,147 @@
+program indeksNilaiPraktikan;
+uses crt;
+
+var
+    nama1, nama2, nama3, nama4, nama5: string;
+    nilai1, nilai2, nilai3, nilai4, nilai5: integer;
+    indeks1, indeks2, indeks3, indeks4, indeks5: string;
+    lulus, mengulang: integer;
+
+begin
+    clrscr;
+    lulus := 0;
+    mengulang := 0;
+    
+    // Praktikan 1
+    write('Nama Praktikan 1: ');
+    readln(nama1);
+    write('Nilai Akhir: ');
+    readln(nilai1);
+
+    if nilai1 >= 90 then
+        indeks1 := 'A'
+    else if nilai1 > 85 then
+        indeks1 := 'B+'
+    else if nilai1 > 75 then
+        indeks1 := 'C+'
+    else if nilai1 >= 70 then
+        indeks1 := 'C'
+    else if nilai1 >= 65 then
+        indeks1 := 'D'
+    else
+        indeks1 := 'E';
+
+    if (indeks1 = 'A') or (indeks1 = 'B+') or (indeks1 = 'C+') or (indeks1 = 'C') then
+        inc(lulus)
+    else
+        inc(mengulang);
+
+
+        // Praktikan 2
+    write('Nama Praktikan 2: ');
+    readln(nama2);
+    write('Nilai Akhir: ');
+    readln(nilai2);
+
+    if nilai2 >= 90 then
+        indeks2 := 'A'
+    else if nilai2 > 85 then
+        indeks2 := 'B+'
+    else if nilai2 > 75 then
+        indeks2 := 'C+'
+    else if nilai2 >= 70 then
+        indeks2 := 'C'
+    else if nilai2 >= 65 then
+        indeks2 := 'D'
+    else
+        indeks2 := 'E';
+
+    if (indeks2 = 'A') or (indeks2 = 'B+') or (indeks2 = 'C+') or (indeks2 = 'C') then
+        inc(lulus)
+    else
+        inc(mengulang);
+
+    // Praktikan 3
+    write('Nama Praktikan 3: ');
+    readln(nama3);
+    write('Nilai Akhir: ');
+    readln(nilai3);
+
+    if nilai3 >= 90 then
+        indeks3 := 'A'
+    else if nilai3 > 85 then
+        indeks3 := 'B+'
+    else if nilai3 > 75 then
+        indeks3 := 'C+'
+    else if nilai3 >= 70 then
+        indeks3 := 'C'
+    else if nilai3 >= 65 then
+        indeks3 := 'D'
+    else
+        indeks3 := 'E';
+
+    if (indeks3 = 'A') or (indeks3 = 'B+') or (indeks3 = 'C+') or (indeks3 = 'C') then
+        inc(lulus)
+    else
+        inc(mengulang);
+
+    // Pratikan 4
+    write('Nama Praktikan 4: ');
+    readln(nama4);
+    write('Nilai Akhir: ');
+    readln(nilai4);
+
+    if nilai4 >= 90 then
+        indeks1 := 'A'
+    else if nilai4 > 85 then
+        indeks4 := 'B+'
+    else if nilai4 > 75 then
+        indeks4 := 'C+'
+    else if nilai4 >= 70 then
+        indeks4 := 'C'
+    else if nilai4 >= 65 then
+        indeks4 := 'D'
+    else
+        indeks4 := 'E';
+
+    if (indeks4 = 'A') or (indeks4 = 'B+') or (indeks4 = 'C+') or (indeks4 = 'C') then
+        inc(lulus)
+    else
+        inc(mengulang);
+
+    // Pratikan 5
+    write('Nama Praktikan 5: ');
+    readln(nama5);
+    write('Nilai Akhir: ');
+    readln(nilai5);
+
+    if nilai5 >= 90 then
+        indeks5 := 'A'
+    else if nilai5 > 85 then
+        indeks5 := 'B+'
+    else if nilai5 > 75 then
+        indeks5 := 'C+'
+    else if nilai5 >= 70 then
+        indeks5 := 'C'
+    else if nilai5 >= 65 then
+        indeks5 := 'D'
+    else
+        indeks5 := 'E';
+
+    if (indeks5 = 'A') or (indeks5 = 'B+') or (indeks5 = 'C+') or (indeks5 = 'C') then
+        inc(lulus)
+    else
+        inc(mengulang);
+
+    // Output
+    writeln;
+    writeln('Indeks Nilai Praktikan 1: ', indeks1);
+    writeln('Indeks Nilai Praktikan 2: ', indeks2);
+    writeln('Indeks Nilai Praktikan 3: ', indeks3);
+    writeln('Indeks Nilai Praktikan 4: ', indeks4);
+    writeln('Indeks Nilai Praktikan 5: ', indeks5);
+    writeln;
+    writeln('Total Praktikan Lulus: ', lulus);
+    writeln('Total Praktikan Lulus: ', mengulang);
+end.
+
